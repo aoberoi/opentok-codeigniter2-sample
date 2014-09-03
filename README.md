@@ -1,6 +1,9 @@
 # OpenTok CodeIgniter 2 Sample
 
-This repository is just a proof of concept for using OpenTok with CodeIgniter 2
+This repository is just a proof of concept for using OpenTok with CodeIgniter 2.
+
+The crucial step in getting this project to work is to add the 'Composer Autoload' section into
+the `index.php` file, so that the Composer autoloader is registered.
 
 ## Set up
 
