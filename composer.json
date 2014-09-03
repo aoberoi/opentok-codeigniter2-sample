@@ -1,0 +1,10 @@
+{
+    "name": "aoberoi/opentok-codeigniter2-sample",
+    "authors": [
+        {
+            "name": "Ankur Oberoi",
+            "email": "aoberoi@gmail.com"
+        }
+    ],
+    "require": {}
+}
