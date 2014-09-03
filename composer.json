@@ -6,5 +6,7 @@
             "email": "aoberoi@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "opentok/opentok": "2.2.*"
+    }
 }

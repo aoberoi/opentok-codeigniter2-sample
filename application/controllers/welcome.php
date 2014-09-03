@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+use OpenTok\OpenTok;
+
 class Welcome extends CI_Controller {
 
 	/**
@@ -21,6 +23,17 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+    public function opentok()
+    {
+        $opentok = new OpenTok($this->config->item('opentok_key'), $this->config->item('opentok_secret'));
+        $session = $opentok->createSession();
+        $data = array(
+            'sessionId' => $session->getSessionId(),
+            'token' => $session->generateToken()
+        );
+        $this->load->view('opentok', $data);
+    }
 }
 
 /* End of file welcome.php */
